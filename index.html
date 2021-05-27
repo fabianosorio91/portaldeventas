@@ -12,7 +12,7 @@
     <header>
       <nav>
        
-        <a href="#"></a>
+       
         <a href="#">Inicio</a>
         <a href="#">Instrumentos </a>
         <a href="#">Accesorios</a>
@@ -22,6 +22,8 @@
             <section class="textos_header">
         <h1>VENTAS AL 100 %</h1>
         <h2>Y mas</h2>
+         
+        
       </section>
       <div class="wave" style="height: 150px; overflow: hidden">
         <svg
@@ -42,13 +44,19 @@
       <section class="portafolio">
         <div class="contenedor">
           <h2 class="titulo">Portafolio</h2>
+          <h2>Total a Pagar</h2>
+          
+          <button id="tiendap" class="botonpagar" onclick="pay()">PAGAR</button>
+          <br><br>
           <div class="galeria-port">
+            
 
             <div class="imagen-port">
               <img src="./imagenes/g1.png" alt="" />
               <div class="hover-galeria">
                 <p>$740.000</p>
-              </div>
+                <button class="button-add" onclick="add('Guitarra1',740000)">AGREGAR</button>
+              </div>              
             </div>
          
         
@@ -56,6 +64,7 @@
           <img src="./imagenes/g2.png" alt="" />
           <div class="hover-galeria">
             <p>$540.000</p>
+            <button class="button-add" onclick="add('Guitarra2',540000)">AGREGAR</button>
           </div>
         </div>
 
@@ -63,6 +72,7 @@
           <img src="./imagenes/g3.png" alt="" />
           <div class="hover-galeria">
             <p>$380.000</p>
+            <button class="button-add" onclick="add('Guitarra3',380000)">AGREGAR</button>
           </div>
         </div>
 
@@ -70,6 +80,7 @@
           <img src="./imagenes/g4.png" alt="" />
           <div class="hover-galeria">
             <p>$500.000</p>
+            <button class="button-add" onclick="add('Guitarra4',500000)">AGREGAR</button>
           </div>
         </div>
 
@@ -77,6 +88,7 @@
           <img src="./imagenes/g5.png" alt="" />
           <div class="hover-galeria">
             <p>$450.000</p>
+            <button class="button-add" onclick="add('Guitarra5',450000)">AGREGAR</button>
           </div>
         </div>
 
@@ -84,6 +96,7 @@
             <img src="./imagenes/g6.png" alt="" />
             <div class="hover-galeria">
               <p>$390.000</p>
+              <button class="button-add" onclick="add('Guitarra6',390000)">AGREGAR</button>
             </div>
           </div>
 
@@ -91,6 +104,7 @@
             <img src="./imagenes/g7.png" alt="" />
             <div class="hover-galeria">
               <p>$570.000</p>
+              <button class="button-add" onclick="add('Guitarra7',570000)">AGREGAR</button>
             </div>
           </div>
 
@@ -98,8 +112,13 @@
             <img src="./imagenes/g8.png" alt="" />
             <div class="hover-galeria">
               <p>$390.000</p>
+              <button class="button-add" onclick="add('Guitarra8',390000)">AGREGAR</button>
             </div>
           </div>
+
+        
+
+          
 
           <section class="contenedor sobre-nosotros">
             <h2 class="titulo">Nuestros Productos</h2>

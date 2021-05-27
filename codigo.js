@@ -1,14 +1,12 @@
-function addEventListenerListResaltar(list) {
-    for (var i = 0, len = list.length; i < len; i++) {
-        list[i].addEventListener('mouseover', function(){list.forEach(function(e){e.className = "caja resaltar"})}, false);
-        list[i].addEventListener('mouseleave', function(){list.forEach(function(e){e.className = "caja"})}, false);
-    }
+let products  =[];
+let total =0;
+function add(product, price){
+    console.log(product,  price);
+    products.push(product);
+    total= total + price;
+    document.getElementById("tiendap").innerHTML = `CONFIRMAR COMPRA:  $${total}`;
 }
-
-function resolveList(list){
-    for (var i = 0, len = list.length; i < len; i++) {
-        list[i].className = "caja resaltar"
-        list[i].removeEventListener('mouseover',function(){console.log("Removed")})
-        list[i].removeEventListener('mouseleave',function(){console.log("Removed")})
-    }
+function pay(){
+    alert("Productos seleccionados. Clic para continuar")
+    window.alert(products.join(", \n ")); 
 }

@@ -102,6 +102,8 @@ header .textos_header {
   padding: 2px;
 }
 
+
+
 .contenido-textos p {
   padding: 0px 0px 30px 15px;
   font-weight: 300;
@@ -148,4 +150,11 @@ header .textos_header {
 .contenedor-footer{
     background-color: #362334b4;
 }
+
+button{
+  font-size: 14px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 6px 15px;
+
 
